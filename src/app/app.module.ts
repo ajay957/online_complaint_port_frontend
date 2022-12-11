@@ -7,18 +7,24 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UserRegComponent } from './user-reg/user-reg.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AdminLoginComponent
+  },
+  {
+    path:"userreg",
+    component:UserRegComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    UserRegComponent
   ],
   imports: [
     BrowserModule,
